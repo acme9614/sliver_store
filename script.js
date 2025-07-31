@@ -27,6 +27,14 @@ function navigateToScheme() {
   }
 
 
+  function navigateToCatalogues() {
+    Toaster.postMessage('navigateToCatalogues');
+  }
+function navigateToQuickPurchase() {
+    Toaster.postMessage('navigateToQuickPurchase');
+  }
+
+
   
   
   function navigateToBankDetails() {
@@ -129,11 +137,11 @@ function navigateToHomePage() {
     const arrow = document.getElementById("arrowIcon");
 
     if (!expanded) {
-      container.classList.remove("max-h-[6.7rem]");
+      container.classList.remove("max-h-[6.9rem]");
       arrow.classList.add("rotate-180");
       expanded = true;
     } else {
-      container.classList.add("max-h-[6.7rem]");
+      container.classList.add("max-h-[6.9rem]");
       arrow.classList.remove("rotate-180");
       expanded = false;
     }
